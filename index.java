@@ -20,9 +20,9 @@ public class Main {
 
 private static ArrayList<BuySell> allPossibleDeals(int[] arr) {
 ArrayList<BuySell> buySells = new ArrayList<BuySell>();
-for (int i = 0; i < arr.length - 2; ++i) {
+for (int i = 0; i < arr.length - 1; ++i) {
 int buy = arr[i];
-for (int j = i + 2; j < arr.length; ++j) {
+for (int j = i + 1; j < arr.length; ++j) {
 int sell = arr[j];
 buySells.add(new BuySell(buy, sell,i,j));
 }
